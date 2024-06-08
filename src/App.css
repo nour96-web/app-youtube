@@ -1,5 +1,6 @@
 .App {
   text-align: center;
+  margin: 0 0 30px;
 }
 
 .App-logo {
@@ -35,4 +36,247 @@
   to {
     transform: rotate(360deg);
   }
+}
+.App .topnav {
+  position: relative;
+  display: grid;
+  align-items: start;
+  justify-content: space-between;
+  grid-template-columns: 200px auto 200px;
+  grid-gap: 100px;
+  margin: 0 0 30px;
+}
+.App .topnav .bloc-left {
+  display: flex;
+  padding: 0 20px;
+}
+.App .topnav .bloc-left button.btn.btn-primary {
+  background: transparent;
+  border: none;
+  height: 24px;
+  margin-top: 19px;
+  padding: 0;
+}
+.App .topnav .bloc-left button.btn.btn-primary span.material-symbols-outlined {
+  color: #000;
+}
+
+.App .topnav .bloc-center {
+  position: relative;
+  display: flex;
+  align-items: center;
+  grid-gap: 20px;
+}
+.App .topnav .bloc-center .mic {
+  float: right;
+  margin-top: 10px;
+}
+.App .topnav .bloc-center input.mr-sm-2.form-control {
+  width: 500px;
+  border-radius: 40px;
+  height: 44px;
+}
+.App .topnav .bloc-center nav.bg-body-tertiary.justify-content-between.navbar.navbar-expand.navbar-light {
+  background-color: transparent !important;
+}
+
+.bg-body-tertiary .col-auto {
+  padding: 0;
+}
+.bg-body-tertiary .col-auto button.btn.btn-primary {
+  margin-left: 10px;
+}
+
+
+.App .topnav .bloc-right {
+  display: flex;
+  align-items: center;
+  grid-gap: 20px;
+  margin-top: 20px;
+  justify-content: end;
+  margin-right: 10px;
+}
+.App .bott-bloc {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  grid-gap: 30px;
+  margin-left: 100px;
+}
+.App .bott-bloc .sugg {
+  border: 1px solid #eee;
+  padding: 20px;
+  border-radius: 10px;
+  margin-right: 100px;
+}
+
+.App .bott-bloc .sugg h3 {
+  text-align: left;
+  text-transform: uppercase;
+  font-size: 20px;
+}
+.App .bott-bloc .sugg h3 span {
+  display: block;
+  font-size: 12px;
+  text-transform: none;
+  line-height: 1.5em;
+}
+.App .bott-bloc .sugg div#cart {
+  display: flex;
+  grid-gap: 10px;
+}
+
+.App .bott-bloc .sugg div#cart img {
+  border-radius: 10px;
+}
+
+.App .bott-bloc .sugg #cart .info-video h4 {
+  font-size: 14px;
+  font-weight: 500;
+  text-align: left;
+  line-height: 20px;
+  margin: 0;
+  color: #191919;
+}
+
+.App .bott-bloc .sugg #cart .info-video h6 {
+  font-size: 12px;
+  text-align: left;
+  margin: 0;
+  color: #656565;
+}
+.App .bott-bloc .sugg div#cart {
+  display: flex;
+  grid-gap: 10px;
+  margin: 10px 0;
+}
+
+.offcanvas-body ul li {
+  display: flex;
+  margin: 10px 0;
+  grid-gap: 10px;
+}
+.App .bott-bloc .bottom-bloc {
+  position: relative;
+}
+
+.coord-user {
+  display: grid;
+  grid-template-columns: 40px auto;
+  grid-gap: 20px;
+  justify-content: start;
+  text-align: left;
+}
+.coord-user .info-user h4 {
+  font-size: 13px;
+  font-weight: 500;
+  color: #0f0f0f;
+  margin: 0;
+}
+
+.coord-user .info-user {
+  display: flex;
+  align-items: center;
+  grid-gap: 10px;
+}
+.coord-user .info-user h6 {
+  margin: 0;
+  font-size: 12px;
+}
+.comm .bottom-info {
+  text-align: left;
+}
+.comm #cart {
+  margin: 13px 0;
+}
+.App .bott-bloc .contenu {
+  position: relative;
+  text-align: left;
+}
+.App .bott-bloc .contenu .cadre-video {
+  position: relative;
+  max-width: 100%;
+}
+.App .bott-bloc .contenu .cadre-video iframe {
+  max-width: 100%;
+  width: 640px;
+}
+.App .bott-bloc .contenu .cadre-video h6 {
+  margin: 0;
+  font-size: 20px;
+  font-weight: 700;
+}
+.App .bott-bloc .contenu .info-video {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.App .bott-bloc .contenu .info-video h6 {
+  font-size: 16px;
+  font-weight: 500;
+}
+.App .bott-bloc .contenu .info-video button.btn.btn-dark {
+  border-radius: 40px;
+}
+.App .bott-bloc .contenu .info-video .note {
+  display: flex;
+  align-items: center;
+  grid-gap: 10px;
+}
+.App .bott-bloc .contenu .info-video .partager {
+  display: flex;
+  align-items: center;
+}
+.App .bott-bloc .contenu .info-video .partager button.btn.btn-primary {
+  background: transparent;
+  border: none;
+  color: #282828;
+  font-size: 14px;
+  font-weight: 500;
+}
+.App .bott-bloc .contenu .info-video .plus button.btn.btn-primary {
+  background: #eee;
+  border: none;
+  color: #282828;
+  border-radius: 50%;
+  line-height: 1em;
+  height: 48px;
+}
+.App .bott-bloc .contenu .info-video .note {
+  display: flex;
+  align-items: center;
+  grid-gap: 10px;
+  background: #eee;
+  padding: 10px;
+  border-radius: 40px;
+}
+.App .bott-bloc .contenu .info-video .note span {
+  display: flex;
+}
+
+.App .bott-bloc .contenu .info-video .partager {
+  display: flex;
+  align-items: center;
+  background: #eee;
+  border-radius: 40px;
+  padding: 7px;
+}
+ .contenu.offcanvas.offcanvas-start {
+  height: 226px;
+  width: 165px;
+  right: 20%;
+  left: auto;
+  top: 14%;
+  border-radius: 20px;
+  text-align: center;
+  padding: 0;
+}
+.contenu.offcanvas.offcanvas-start ul {
+  margin: 0;
+  padding: 0;
+}
+.contenu.offcanvas.offcanvas-start ul {
+  margin: 0;
+  padding: 0;
+  top: -30px;
+  position: relative;
 }
